@@ -3,8 +3,8 @@ pipeline {
   stages {
   stage('Build') {
   steps {
-     bat 'dotnet clean'
-     bat 'dotnet build --no-incremental'
+     sh 'dotnet clean'
+     sh 'dotnet build --no-incremental'
 }
 }
 }
