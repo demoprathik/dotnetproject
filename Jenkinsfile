@@ -1,5 +1,5 @@
 pipeline {
-  agent  {label 'linuxslave'}
+  agent machine {label 'linuxslave'}
   stages {
   stage('checkout') {
   steps {
