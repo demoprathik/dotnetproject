@@ -1,11 +1,11 @@
 pipeline {
   agent  {label 'linuxslave'}
   stages {
-  stage('Build') {
+  stage('checkout') {
   steps {
     script {
-     bat 'dotnet clean'
-     bat 'dotnet build --no-incremental'
+     bat 'dotnet Build'
+     bat 'dotnet clean --no-incremental'
 }
 }
 }
